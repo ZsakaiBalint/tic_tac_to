@@ -1,8 +1,32 @@
 import { useState } from "react";
 
-//value can be: "X"/"O"/null
-function Square({value, onSquareClick, isWinningSquare = false}) {
+// LEVEL 1 - JUNIOR
+// FEATURES: game / gameboard / gamelogic / player / leaderbord / store
+// Add redux store to the project
+// Save all game logic and data to the browser or better to some db
+// Update your function definitions to arrow functions and export them into its own features
+// and import them into this App 
+// Use react hooks ( bonus if you create custom hooks for each features )
 
+// LEVEL 2 - MEDIOR
+// add a main screen with form where I can enter a nickname and participate in the leaderboard
+// check nickname validation ( google for form validation for react / redux )
+// if nickname is available show a button and let me enter to a game against cpu
+// postgreSQL for database
+// choose a backend language
+
+// LEVEL 3 - SENIOR
+// JAVA Backend
+// Add real-time server for your game over websockets and let it go multiplayer
+// Create waiting room
+// Add real-time chat
+// Add eslint and pre-commits
+
+// LEVEL 4 - TECH LEAD add documentation to your project, hotfix, blog, invite people to participate in open SourceBuffer
+
+//value can be: "X"/"O"/null <-- no comments please use clean code instead
+function Square({value, onSquareClick, isWinningSquare = false}) {
+  
   return (
     <button 
       className={`square ${isWinningSquare ? "square-highlighted" : ""}`}
