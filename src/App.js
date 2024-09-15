@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+//multiplayer
+
 //value can be: "X"/"O"/null
 function Square({value, onSquareClick, isWinningSquare = false}) {
 
